@@ -1,0 +1,42 @@
+
+# 앱이름
+name: my_app_1
+description: A new Flutter project.
+
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+
+version: 1.0.0+1
+#다트버전
+environment:
+  sdk: '>=2.19.3 <3.0.0'
+
+#종속석, 의존성, 라이브러리
+dependencies:
+  flutter:
+    sdk: flutter
+
+
+  cupertino_icons: ^1.0.2
+  #버전 앞에 아무것도 없으면 - 버전고정
+  #버전 앞에 ^ 있으면 - 호환 가능한 최신 버전 8.*.*
+  #버전 앞에 ~ 있으면 - 버그가 수정된 최신 버전 8.1.*
+  #앱 개발 시 ^ 사용
+  #앱 개발 완료시 기호 없앰
+  #앱 유지보수 시 ^ 또는 ~ 또는 최신버전 업데이트
+  # lock 파일은 건들이지 않는다. git에 공유한다.
+  bloc: 8.1.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+
+  flutter_lints: ^2.0.0
+
+
+flutter:
+
+
+  uses-material-design: true
+
